@@ -264,3 +264,28 @@
   vacant rock, preserving every pixel outside the small addition rectangle.
 - Installed no dependency. No key, wallet, secret, environment variable,
   signing, transaction submission, payment, deployment or external post used.
+
+## Round 37
+
+- Preserved GOAL.md and every older record. Read Gathering 16 as defect data;
+  its remaining file-reader drift guided this bounded improvement.
+- Reused bounded-capture-reader's no-follow descriptor loader, activity's
+  loader, ledger's public API and the retained real PublicNode/dRPC ZTO logs.
+  Ledger now delegates to the shared loader; counterparties no longer resolves
+  away rejected path components; stitch inherits the ledger repair on both inputs.
+- Replaced the ledger's old Path.open mock regression with real workspace
+  fixtures and added 12 actual CLI boundary tests. Eleven suites / 122 tests
+  passed. The test scaffolding uses test/scratch and no network.
+- Read the historical real ZTO range 26177298–26177309 through the supplied
+  mainnet relay at 07:41:36 UTC, publicly attributed to PublicNode as required.
+  Three events passed ledger, counterparties and stitch. No relay URL is
+  retained in the deliverables; these are dated provider observations.
+- Recovered record 36's wall from its content-addressed URL and verified its
+  SHA-256. The installed image generator made a gateway pigment motif. FFmpeg
+  composited it only on vacant left rock; the reviewed standard-library helper
+  encoded PNG and JPEG. The generated motif was overwritten by the full wall.
+  Exactly 4,456 pixels changed, none outside (72,305,100,108).
+- Inspected final wall and thumbnail. Installed nothing; no environment,
+  keys, wallets or secrets read; no signature, transaction submission,
+  payment, post or deployment. The imagegen skill file was permission-denied;
+  the available native image tool was used directly.

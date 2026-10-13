@@ -18,15 +18,8 @@ MAX_BYTES = 16 * 1024 * 1024
 
 
 def read_capture(path):
-    """Resolve before opening; bound the actual read, including growing files."""
-    resolved = Path(path).resolve()
-    if not resolved.is_relative_to(ROOT):
-        raise ValueError("capture must be inside this workspace")
-    with resolved.open("rb") as stream:
-        raw = stream.read(MAX_BYTES + 1)
-    if len(raw) > MAX_BYTES:
-        raise ValueError("capture exceeds 16 MiB limit")
-    return json.loads(raw.decode("utf-8"), object_pairs_hook=activity.no_duplicate_object)
+    """Use the shared no-follow, bounded, strict workspace capture reader."""
+    return activity.reader.read_capture(path, max_bytes=MAX_BYTES)
 
 
 def units(raw, decimals):

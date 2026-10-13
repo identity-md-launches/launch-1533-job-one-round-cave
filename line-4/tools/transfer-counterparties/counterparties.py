@@ -66,11 +66,6 @@ def main(argv=None):
                         help="include only flows touching this public address")
     args = parser.parse_args(argv)
     path = HERE.parent / "transfer-crosscheck" / "publicnode.json" if args.demo else args.capture
-    # Confine all file reads to the working tree; resolve symlinks before opening.
-    root = HERE.parents[2]
-    path = path.resolve()
-    if not path.is_relative_to(root):
-        raise ValueError("capture must be inside this workspace")
     print(json.dumps(report(activity.read_capture(path), args.address), indent=2, sort_keys=True))
 
 

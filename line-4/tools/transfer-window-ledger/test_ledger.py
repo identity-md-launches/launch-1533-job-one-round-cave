@@ -112,9 +112,15 @@ class LedgerTests(unittest.TestCase):
                 tool.read_capture("/outside/never-read.json")
 
     def test_bounded_read_and_duplicate_keys(self):
-        path = HERE / "synthetic.json"
-        for data, pattern in ((b"x" * 9, "16 MiB"), (b'{"x":1,"x":2}', "duplicate key")):
-            with patch.object(Path, "open", return_value=io.BytesIO(data)):
+        # Real workspace files exercise the descriptor reader, not mocked Path.open.
+        import tempfile
+        scratch = HERE.parents[2] / "test/scratch"
+        scratch.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=scratch) as directory:
+            path = Path(directory) / "synthetic.json"
+            for data, pattern in ((b"x" * 9, "byte limit"),
+                                  (b'{"x":1,"x":2}', "duplicate key")):
+                path.write_bytes(data)
                 with patch.object(tool, "MAX_BYTES", 8 if data.startswith(b"x") else 100):
                     with self.assertRaisesRegex(ValueError, pattern):
                         tool.read_capture(path)

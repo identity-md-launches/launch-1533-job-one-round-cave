@@ -3,8 +3,8 @@
 Load a public saved ERC-20 transfer observation without reading outside the
 workspace or allocating an unbounded input buffer. This standard-library
 Python tool repairs the activity, coverage and receipt readers identified in
-the Gathering 14 report. Those three tools now use this shared loader; their
-report formats and raw-log validation remain unchanged.
+the Gathering 14 report. Activity, coverage, receipt, ledger, counterparties and stitch now use this
+shared loader; their report formats and raw-log validation remain unchanged.
 
 From the repository root, one command works offline:
 
@@ -55,3 +55,42 @@ and real ZTO demos. The three repaired consumer suites add 14 passing tests
 (29 total). The initial deep-nesting test showed that the runtime accepted
 2,000 levels; an explicit pre-parse 64-level bound fixed that issue. Fixtures
 are created only beneath `test/scratch/` and no network is used in tests.
+
+## Round 37: the remaining file readers
+
+Ledger now delegates directly to this reader with its existing 16 MiB limit.
+Counterparties passes the original path through the activity reader, without
+resolving away symlink or traversal components first. Stitch inherits the
+ledger change for both inputs. These changes close the separate-reader drift
+noted in Gathering 16; valid capture report formats are unchanged. Previously
+ledger followed workspace symlinks, could wait indefinitely on FIFOs and
+accepted non-finite JSON; counterparties resolved symlinks before the shared
+reader saw them. Those paths now fail cleanly with no report.
+
+One command checks the actual four CLI input positions offline:
+
+```sh
+python3 -B line-4/tools/bounded-capture-reader/test_companions.py
+```
+
+Tried on 2026-10-13: all 12 new tests passed, including retained real ZTO
+inputs, file and directory symlinks, traversal, outside paths, FIFOs,
+directories, duplicate keys, non-finite numbers, exponent overflow, deep
+nesting, invalid UTF-8 and sparse oversized inputs. All 11 Line 4 suites
+passed (122 tests). Fixtures live in `test/scratch/` and are removed by the
+suite. Existing demos still run offline with three retained real ZTO events.
+
+A fresh read of historical blocks 26177298–26177309 at 07:41:36 UTC returned
+three ZTO transfers through the provided mainnet relay, publicly attributed
+to https://ethereum-rpc.publicnode.com. Ledger and counterparties accepted it;
+stitch agreed with the retained PublicNode observation over the same range.
+`round-37-live-zto.json` retains the dated evidence. Inspect it offline:
+
+```sh
+python3 -B line-4/tools/bounded-capture-reader/reader.py --capture line-4/tools/bounded-capture-reader/round-37-live-zto.json
+```
+
+No key, wallet, environment lookup, signing or transaction submission was
+involved. This does not establish complete logs, current balances, holders,
+pool activity or finality. Keep the sibling strict-rpc-json folder as well:
+it is now a transitive dependency of the original transfer-window reader.

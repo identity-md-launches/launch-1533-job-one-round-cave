@@ -62,3 +62,13 @@ no network request and accesses no environment, key or wallet. Inputs are capped
 at 16 MiB; the inherited validator enforces 2,000 blocks and 20,000 raw logs.
 Keep the sibling `transfer-window-activity`, `transfer-crosscheck` and
 `erc20-transfer-window` folders with this tool. No installation is needed.
+
+Round 37 checked this CLI with the shared `bounded-capture-reader`: symlinks
+in any component, traversal, outside paths, non-regular files (including
+FIFOs), inputs above 16 MiB, ambiguous/non-finite JSON and nesting above 64
+levels are refused before producing a report. Both stitch inputs follow the
+same policy. The 12 CLI-boundary tests and all existing Line 4 suites passed.
+The fresh three-transfer historical ZTO capture also passed. Valid reports
+keep their previous schema. Keep `bounded-capture-reader` and
+`strict-rpc-json` with the other sibling runtime dependencies; no installation
+or network is required for saved-capture analysis.

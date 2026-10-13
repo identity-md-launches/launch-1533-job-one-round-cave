@@ -58,3 +58,13 @@ Flows are event observations, not balances, holder rankings, full history,
 finality or proof of provider honesty. Each movement appears on its directed
 edge, so adding every edge can count the same tokens repeatedly. Self-transfers
 count once. No address ownership or economic meaning is inferred.
+
+Round 37 checked this CLI with the shared `bounded-capture-reader`: symlinks
+in any component, traversal, outside paths, non-regular files (including
+FIFOs), inputs above 16 MiB, ambiguous/non-finite JSON and nesting above 64
+levels are refused before producing a report. Both stitch inputs follow the
+same policy. The 12 CLI-boundary tests and all existing Line 4 suites passed.
+The fresh three-transfer historical ZTO capture also passed. Valid reports
+keep their previous schema. Keep `bounded-capture-reader` and
+`strict-rpc-json` with the other sibling runtime dependencies; no installation
+or network is required for saved-capture analysis.

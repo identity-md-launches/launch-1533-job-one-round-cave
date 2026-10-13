@@ -1,0 +1,40 @@
+{
+  "name": "The Common Gate",
+  "ancestor_sha256": "6bdb44ce53d0b5be561289d39eaff234b03477557fe96e37fdd05ef07925671f",
+  "wall_sha256": "46ef5d3f5d3e828d274fdb703df6e65705251c48baf70f7d81bec8f51bb43955",
+  "wall": {
+    "paths": [
+      "artifacts/line-4/wall.png",
+      "artifacts/line-4/wall-v18.png"
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "PNG",
+    "colour": "8-bit RGB",
+    "bytes": 3956818
+  },
+  "thumbnail": {
+    "path": "dist/line-4/37.jpg",
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "baseline JPEG",
+    "bytes": 77414
+  },
+  "addition_rectangle": [
+    72,
+    305,
+    100,
+    108
+  ],
+  "changed_pixels": 4456,
+  "changed_pixels_outside_addition": 0,
+  "method": "Built-in image generator made the earth-pigment gateway; FFmpeg cropped it, removed white and blended only that vacant-rock rectangle. Standard-library PNG/JPEG helper encoded the final formats. Temporary motif overwritten by finished wall.",
+  "visual_review": "Inspected the whole PNG and decoded 512px JPEG. New ochre-and-charcoal gateway occupies vacant left rock; Pepe, existing paintings, cracks, light, rock and framing remain unchanged outside the addition. No new hands, lettering, numerals, captions, logos, watermark, borders, real people or prohibited symbols observed.",
+  "hands": "Inherited Pepe hands retain four fingers and one thumb each; the inherited lower-left open hand stencil has four fingers and one thumb. All remain byte-identical in the full PNG. No new hands.",
+  "unmet_visual_requirements": [],
+  "limitations": "Local visual review only. Photographic-looking inherited rock was preserved as requested. The small gateway is subdued at thumbnail scale; the JPEG is lossy."
+}

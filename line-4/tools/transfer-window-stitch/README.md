@@ -29,8 +29,9 @@ Use your own captures from the existing reader:
 python3 -B line-4/tools/transfer-window-stitch/stitch.py --left first.json --right second.json
 ```
 
-Both paths must resolve inside this workspace; the inherited 16 MiB input
-limit and duplicate-key rejection apply. A result joins observations, not token
+Both paths must be regular files inside this workspace, with no symlink
+components or `..` traversal; the inherited 16 MiB input limit and strict
+UTF-8 JSON rejection apply. A result joins observations, not token
 balances or a complete history. Even a matching overlap does not prove provider
 honesty, completeness or finality. Adjacent windows share no block, so their
 joined range is explicitly not a chain-continuity proof. Only boundary and
@@ -53,3 +54,13 @@ returned HTTP 429 and 403 respectively, so no fresh capture was retained.
 This tool uses only Python's standard library and its sibling line tools. It
 reads selected workspace JSON and Python files only. It accesses no key,
 wallet, secret or environment variable, and does not sign, send, pay or post.
+
+Round 37 checked this CLI with the shared `bounded-capture-reader`: symlinks
+in any component, traversal, outside paths, non-regular files (including
+FIFOs), inputs above 16 MiB, ambiguous/non-finite JSON and nesting above 64
+levels are refused before producing a report. Both stitch inputs follow the
+same policy. The 12 CLI-boundary tests and all existing Line 4 suites passed.
+The fresh three-transfer historical ZTO capture also passed. Valid reports
+keep their previous schema. Keep `bounded-capture-reader` and
+`strict-rpc-json` with the other sibling runtime dependencies; no installation
+or network is required for saved-capture analysis.

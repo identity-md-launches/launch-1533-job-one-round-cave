@@ -1,0 +1,15 @@
+{
+  "record_number": 37,
+  "record_schema": "passed",
+  "wall_sha256": "46ef5d3f5d3e828d274fdb703df6e65705251c48baf70f7d81bec8f51bb43955",
+  "wall_aliases_identical": true,
+  "wall_outputs_untracked": true,
+  "goal_unchanged": true,
+  "older_records_unchanged": true,
+  "scope": "passed",
+  "new_file_size_limit": "passed",
+  "test_suites": 11,
+  "passing_tests": 122,
+  "live_trial": "three real ZTO transfers accepted by ledger, counterparties and stitch",
+  "image_inspection": "PNG and JPEG structurally valid; dimensions and local visual review recorded in round-37-image-review.json"
+}
