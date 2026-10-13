@@ -1,0 +1,48 @@
+{
+  "source_record": 16,
+  "record_number": 17,
+  "source_sha256": "9a003931785ec18e966384b0e58390fff585474877c5eaef23dc39a03f3881d2",
+  "wall_sha256": "c7c661823015e362438ebc2dff9df0b0521ca172616ef663dc5fc1132ce8fb06",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "8-bit RGB PNG",
+  "png_bytes": 3811228,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "jpeg_bytes": 69935,
+  "generated_motif_dimensions": [
+    1254,
+    1254
+  ],
+  "generated_motif_sha256": "9a9df0f112b45ac4de8b475a789a29ef361ed6fe738b45671bb5741ec93e39e0",
+  "motif_crop": [
+    369,
+    273,
+    896,
+    977
+  ],
+  "addition_rectangle": [
+    1010,
+    560,
+    145,
+    120
+  ],
+  "changed_pixels": 6629,
+  "changed_pixels_outside_rectangle": 0,
+  "method": "Installed image tool motif; white paper removed in memory, earth pigment area-averaged into vacant rock.",
+  "visual_review": "Final full PNG and decoded JPEG visually inspected. Inherited Pepe has wide mouth and heavy-lidded eyes. Both hands counted as four fingers and one thumb, five digits each. No hands added; no text, numerals, logos, watermarks, borders, real people or prohibited symbols observed.",
+  "inherited_hand_digit_counts": [
+    5,
+    5
+  ],
+  "unmet_visual_requirements": [],
+  "limitations": [
+    "Inherited rock has photographic-looking texture, preserved as required.",
+    "Small motif is subdued at 512px. Visual review is local, not independent artistic certification."
+  ]
+}

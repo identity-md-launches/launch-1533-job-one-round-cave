@@ -1,0 +1,970 @@
+[
+  {
+    "file": "line-3/tools/amount-view/amount_view.py",
+    "calls": [
+      "SystemExit"
+    ]
+  },
+  {
+    "file": "line-3/tools/amount-view/test_amount_view.py",
+    "calls": []
+  },
+  {
+    "file": "line-3/tools/keccak-envelope/keccak_envelope.py",
+    "calls": [
+      "SystemExit",
+      "spec.loader.exec_module",
+      "transaction_hex.removeprefix"
+    ]
+  },
+  {
+    "file": "line-3/tools/keccak-envelope/test_keccak_envelope.py",
+    "calls": [
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-3/tools/access-list-audit/test_access_audit.py",
+    "calls": [
+      "a.reader.D.demo_transaction",
+      "a.reader.D.rlp_encode",
+      "a.reader.D.rlp_encode(fields + [b'', b'\\x01', b'\\x01']).hex",
+      "a.reader.D.rlp_encode(fields).hex",
+      "a.reader.D.rlp_item",
+      "a.reader.demo_object"
+    ]
+  },
+  {
+    "file": "line-3/tools/access-list-audit/access_audit.py",
+    "calls": [
+      "SystemExit",
+      "reader.D.rlp_encode",
+      "reader.D.rlp_encode(fields).hex",
+      "reader.demo_object",
+      "reader.inspect_json",
+      "reader.intent.interpret",
+      "sys.stdin.read",
+      "text.removesuffix",
+      "text.removesuffix('\\n').removesuffix"
+    ]
+  },
+  {
+    "file": "line-3/tools/rlp-byte-map/byte_map.py",
+    "calls": [
+      "SystemExit",
+      "sys.stdin.read",
+      "sys.stdin.read(MAX_INPUT_CHARS + 1).removesuffix",
+      "sys.stdin.read(MAX_INPUT_CHARS + 1).removesuffix('\\n').removesuffix"
+    ]
+  },
+  {
+    "file": "line-3/tools/rlp-byte-map/test_byte_map.py",
+    "calls": [
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-3/tools/calldata-words/test_word_view.py",
+    "calls": []
+  },
+  {
+    "file": "line-3/tools/calldata-words/word_view.py",
+    "calls": [
+      "SystemExit",
+      "rpc_reader.inspect_json",
+      "sys.stdin.read",
+      "transaction.removesuffix",
+      "transaction.removesuffix('\\n').removesuffix"
+    ]
+  },
+  {
+    "file": "line-3/tools/fee-horizon/test_fee_horizon.py",
+    "calls": [
+      "h.fee_context.reader.D.demo_transaction",
+      "h.fee_context.reader.demo_object",
+      "reader.D.demo_transaction",
+      "reader.demo_object"
+    ]
+  },
+  {
+    "file": "line-3/tools/fee-horizon/fee_horizon.py",
+    "calls": [
+      "SystemExit",
+      "fee_context.reader.D.demo_transaction",
+      "fee_context.reader.demo_object",
+      "sys.stdin.read",
+      "text.removesuffix",
+      "text.removesuffix('\\n').removesuffix"
+    ]
+  },
+  {
+    "file": "line-3/tools/fee-envelope/fee_envelope.py",
+    "calls": [
+      "SystemExit",
+      "sys.stdin.read",
+      "sys.stdin.read(MAX_INPUT_CHARS + 1).strip"
+    ]
+  },
+  {
+    "file": "line-3/tools/erc20-intent/test_intent.py",
+    "calls": []
+  },
+  {
+    "file": "line-3/tools/erc20-intent/intent.py",
+    "calls": [
+      "SystemExit"
+    ]
+  },
+  {
+    "file": "line-3/tools/rpc-unsigned-reader/test_rpc_reader.py",
+    "calls": [
+      "reader.D.demo_transaction",
+      "reader.demo_object",
+      "reader.inspect_json",
+      "reader.intent.IMD[2:].upper",
+      "reader.intent.interpret",
+      "reader.main"
+    ]
+  },
+  {
+    "file": "line-3/tools/rpc-unsigned-reader/rpc_reader.py",
+    "calls": [
+      "SystemExit",
+      "sys.stdin.read"
+    ]
+  },
+  {
+    "file": "line-3/tools/unsigned-guard/test_guard.py",
+    "calls": []
+  },
+  {
+    "file": "line-3/tools/unsigned-guard/guard.py",
+    "calls": [
+      "SystemExit"
+    ]
+  },
+  {
+    "file": "line-3/tools/canonical-envelope/test_envelope.py",
+    "calls": [
+      "envelope.rpc_reader.demo_object",
+      "envelope.rpc_reader.intent.interpret"
+    ]
+  },
+  {
+    "file": "line-3/tools/canonical-envelope/envelope.py",
+    "calls": [
+      "SystemExit",
+      "rpc_reader.demo_object",
+      "rpc_reader.inspect_json",
+      "rpc_reader.intent.interpret",
+      "sys.stdin.read"
+    ]
+  },
+  {
+    "file": "line-3/tools/zto-eip1559-decoder/test_decoder.py",
+    "calls": []
+  },
+  {
+    "file": "line-3/tools/zto-eip1559-decoder/tx_decode.py",
+    "calls": [
+      "SystemExit"
+    ]
+  },
+  {
+    "file": "line-3/tools/fee-context/fee_context.py",
+    "calls": [
+      "SystemExit",
+      "reader.D.demo_transaction",
+      "reader.demo_object",
+      "reader.inspect_json",
+      "reader.intent.interpret",
+      "sys.stdin.read",
+      "text.removesuffix",
+      "text.removesuffix('\\n').removesuffix"
+    ]
+  },
+  {
+    "file": "line-3/tools/fee-context/test_fee_context.py",
+    "calls": [
+      "f.reader.D.demo_transaction",
+      "f.reader.demo_object"
+    ]
+  },
+  {
+    "file": "line-3/tools/unsigned-diff/test_unsigned_diff.py",
+    "calls": []
+  },
+  {
+    "file": "line-3/tools/unsigned-diff/unsigned_diff.py",
+    "calls": [
+      "SystemExit"
+    ]
+  },
+  {
+    "file": "line-3/tools/gas-budget/test_gas_budget.py",
+    "calls": [
+      "tool.reader.demo_object"
+    ]
+  },
+  {
+    "file": "line-3/tools/gas-budget/gas_budget.py",
+    "calls": [
+      "SystemExit",
+      "reader.D.demo_transaction",
+      "reader.demo_object",
+      "reader.inspect_json",
+      "reader.intent.interpret",
+      "sys.stdin.read",
+      "text.removesuffix",
+      "text.removesuffix('\\n').removesuffix"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-source/test_source.py",
+    "calls": [
+      "(Path('source') / name).write_bytes",
+      "Path('bundle.zip').read_bytes",
+      "Path('bundle.zip').write_bytes",
+      "Path('source/HANDOFF.json').write_bytes",
+      "Path('source/a.txt').unlink",
+      "Path('source/a.txt').write_bytes",
+      "Path('source/caf\u00e9.txt').write_bytes",
+      "Path('source/extra').write_bytes",
+      "Path('source/new').write_bytes",
+      "hashlib.sha256(Path('bundle.zip').read_bytes()).hexdigest",
+      "p.unlink",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-source/source_check.py",
+    "calls": [
+      "os.fdopen",
+      "os.open",
+      "spec.loader.exec_module",
+      "stream.read"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-portability/portability.py",
+    "calls": [
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-portability/test_portability.py",
+    "calls": [
+      "Path(path).read_bytes",
+      "Path(path).read_bytes().replace",
+      "Path(path).write_bytes",
+      "archive.writestr",
+      "hashlib.sha256(Path(path).read_bytes()).hexdigest",
+      "path.write_bytes",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-dependencies/test_dependencies.py",
+    "calls": [
+      "archive.read",
+      "link.unlink",
+      "m.WRITER.build",
+      "m.WRITER.digest",
+      "m.WRITER.digest(self.data).upper",
+      "output.read_bytes",
+      "output.unlink",
+      "source.read",
+      "spec.loader.exec_module",
+      "target.writestr"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-dependencies/dependencies.py",
+    "calls": [
+      "WRITER.regular_bytes",
+      "WRITER.workspace_path",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-subset/subset.py",
+    "calls": [
+      "WRITER.build",
+      "WRITER.regular_bytes",
+      "WRITER.workspace_path",
+      "archive.read",
+      "handle.write",
+      "output.open",
+      "output.unlink",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-subset/test_subset.py",
+    "calls": [
+      "(root / 'README.md').exists",
+      "archive.read",
+      "link.unlink",
+      "m.WRITER.build",
+      "m.WRITER.digest",
+      "m.WRITER.digest(self.data).upper",
+      "m.WRITER.verify",
+      "out.read_bytes",
+      "out.unlink",
+      "source.read",
+      "spec.loader.exec_module",
+      "target.writestr"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff/handoff.py",
+    "calls": [
+      "altered.writestr",
+      "archive.read",
+      "archive.writestr",
+      "handle.read",
+      "handle.write",
+      "original.read",
+      "os.fdopen",
+      "os.open",
+      "output.open"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-inspect/inspect_handoff.py",
+    "calls": [
+      "archive.open",
+      "handle.read",
+      "os.fdopen",
+      "os.open",
+      "read_exact",
+      "source.read"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-inspect/test_inspect.py",
+    "calls": [
+      "Path('line-2/handoff.zip').read_bytes",
+      "archive.read",
+      "archive.writestr",
+      "p.read_bytes",
+      "spec.loader.exec_module",
+      "super().read"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-contract/contract.py",
+    "calls": [
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-contract/test_contract.py",
+    "calls": [
+      "SPEC.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-review/test_review.py",
+    "calls": [
+      "(self.source / 'README.md').write_bytes",
+      "(self.source / 'added.txt').write_bytes",
+      "(self.source / 'extra').write_bytes",
+      "(self.source / 'nested/empty').unlink",
+      "R.WRITER.build",
+      "R.WRITER.digest",
+      "dest.write_bytes",
+      "expectation.write_bytes",
+      "json.dumps({'format': R.CONTENT.FORMAT, 'exact': exact, 'files': [{'path': name, 'bytes': len(data), 'sha256': R.WRITER.digest(data)} for name, data in sorted(self.files.items())]}).encode",
+      "p.read_bytes",
+      "reader.assert_not_called",
+      "self.archive.write_bytes",
+      "source.read",
+      "target.writestr"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-review/review.py",
+    "calls": [
+      "CONTENT.read_expectation",
+      "WRITER.regular_bytes",
+      "WRITER.workspace_path",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-content/test_content.py",
+    "calls": [
+      "content.read_expectation",
+      "self.archive.write_bytes",
+      "self.expected.write_text",
+      "spec.loader.exec_module",
+      "writer.build"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-content/content.py",
+    "calls": [
+      "handle.read",
+      "os.fdopen",
+      "os.open",
+      "read_expectation",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-reproduce/test_reproduce.py",
+    "calls": [
+      "R.WRITER.build",
+      "R.WRITER.digest",
+      "dest.writestr",
+      "path.write_bytes",
+      "source.read"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-reproduce/reproduce.py",
+    "calls": [
+      "WRITER.build",
+      "WRITER.regular_bytes",
+      "WRITER.workspace_path",
+      "archive.read",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-catalog/catalog.py",
+    "calls": [
+      "exclusive_write",
+      "spec.loader.exec_module",
+      "stream.write",
+      "target.open",
+      "workspace_file(args.catalog).read_bytes"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-catalog/test_catalog.py",
+    "calls": [
+      "SPEC.loader.exec_module",
+      "producer.loader.exec_module",
+      "self.a.write_bytes",
+      "self.b.write_bytes"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-landing/landing.py",
+    "calls": [
+      "os.open",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-landing/test_landing.py",
+    "calls": [
+      "(ROOT / 'received').unlink",
+      "(ROOT / 'received').write_text",
+      "(target / 'README.md').write_text",
+      "(target / 'nested').write_text",
+      "(target / 'readme.MD').write_text",
+      "(target / 'readme.md').write_text",
+      "(target / 'unrelated').write_text",
+      "(target / name).write_text",
+      "Path('line-2/handoff.zip').read_bytes",
+      "bad.write_bytes",
+      "path.unlink",
+      "path.write_text"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-compare/test_compare.py",
+    "calls": [
+      "Path('line-2/handoff.zip').read_bytes",
+      "link.unlink",
+      "output.writestr",
+      "source.read",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-2/tools/handoff-compare/compare_handoff.py",
+    "calls": [
+      "archive.read",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-1/tools/pinned-transport-check/pinned_transport_check.py",
+    "calls": [
+      "(HERE / 'example-zto.json').read_bytes",
+      "SystemExit",
+      "spec.loader.exec_module",
+      "super().https_open"
+    ]
+  },
+  {
+    "file": "line-1/tools/pinned-transport-check/test_pinned_transport.py",
+    "calls": [
+      "Path(tool.HERE / 'example-zto.json').read_text",
+      "tool.pinned.public_read"
+    ]
+  },
+  {
+    "file": "line-1/tools/rpc-snapshot/rpc_snapshot.py",
+    "calls": [
+      "SystemExit",
+      "opener.open",
+      "response.read",
+      "urllib.request.build_opener"
+    ]
+  },
+  {
+    "file": "line-1/tools/batch-capture/batch_capture.py",
+    "calls": [
+      "(HERE / 'example-mainnet.json').read_bytes",
+      "SPEC.loader.exec_module",
+      "SystemExit",
+      "opener.open",
+      "response.read",
+      "send",
+      "sys.stdin.buffer.read",
+      "sys.stdout.write",
+      "urllib.request.build_opener"
+    ]
+  },
+  {
+    "file": "line-1/tools/batch-capture/test_batch_capture.py",
+    "calls": [
+      "Path(__file__).with_name('example-mainnet.json').read_bytes",
+      "opener.assert_not_called",
+      "send.assert_not_called"
+    ]
+  },
+  {
+    "file": "line-1/tools/block-audit/block_audit.py",
+    "calls": [
+      "SystemExit",
+      "open",
+      "opener.open",
+      "public_read",
+      "read",
+      "response.read",
+      "source.read",
+      "spec.loader.exec_module",
+      "sys.stdin.buffer.read",
+      "urllib.request.build_opener"
+    ]
+  },
+  {
+    "file": "line-1/tools/block-audit/test_block_audit.py",
+    "calls": [
+      "(HERE.parent / 'direct-capture' / 'example-pinned-zto.json').read_text",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-1/tools/snapshot-crosscheck/test_snapshot_crosscheck.py",
+    "calls": [
+      "EVIDENCE.read_bytes",
+      "EVIDENCE.read_bytes().replace",
+      "EVIDENCE.read_text",
+      "SNAPSHOT.read_bytes",
+      "d['reads'][0].update",
+      "d['reads'][2].update",
+      "d['reads'][2]['params'][0].update",
+      "d['reads'][2]['result'].upper",
+      "d['reads'][2]['result'].upper().replace",
+      "d['reads'][3]['result'].update",
+      "d['reads'][index]['result']['hash'].upper",
+      "d['reads'][index]['result']['hash'].upper().replace",
+      "path.write_bytes",
+      "path.write_text",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-1/tools/snapshot-crosscheck/snapshot_crosscheck.py",
+    "calls": [
+      "SystemExit",
+      "seal.read_bytes",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-1/tools/snapshot-replay/replay.py",
+    "calls": [
+      "(Path(__file__).resolve().parent / 'example-mainnet.json').read_bytes",
+      "SPEC.loader.exec_module",
+      "SystemExit",
+      "sys.stdin.buffer.read"
+    ]
+  },
+  {
+    "file": "line-1/tools/snapshot-replay/test_replay.py",
+    "calls": []
+  },
+  {
+    "file": "line-1/tools/snapshot-seal/snapshot_seal.py",
+    "calls": [
+      "SystemExit",
+      "os.fdopen",
+      "os.open",
+      "read_bytes",
+      "spec.loader.exec_module",
+      "stream.read"
+    ]
+  },
+  {
+    "file": "line-1/tools/snapshot-seal/test_snapshot_seal.py",
+    "calls": [
+      "EXAMPLE.read_bytes",
+      "path.open",
+      "path.read_bytes",
+      "path.write_bytes",
+      "path.write_text",
+      "receipt.write_text",
+      "seal.read_bytes",
+      "self.write",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-1/tools/snapshot-compare/snapshot_compare.py",
+    "calls": [
+      "(Path(__file__).resolve().parents[1] / 'hash-snapshot' / 'example-mainnet.json').read_bytes",
+      "SPEC.loader.exec_module",
+      "SystemExit",
+      "sys.stdin.buffer.read"
+    ]
+  },
+  {
+    "file": "line-1/tools/snapshot-compare/test_snapshot_compare.py",
+    "calls": [
+      "(Path(__file__).resolve().parents[1] / 'hash-snapshot' / 'example-mainnet.json').read_bytes"
+    ]
+  },
+  {
+    "file": "line-1/tools/snapshot-check/check_snapshot.py",
+    "calls": [
+      "SystemExit",
+      "spec.loader.exec_module",
+      "sys.stdin.buffer.read"
+    ]
+  },
+  {
+    "file": "line-1/tools/snapshot-check/test_checks.py",
+    "calls": []
+  },
+  {
+    "file": "line-1/tools/hash-snapshot/hash_snapshot.py",
+    "calls": [
+      "(Path(__file__).resolve().parent / 'example-mainnet.json').read_bytes",
+      "SPEC.loader.exec_module",
+      "SystemExit",
+      "opener.open",
+      "public_read",
+      "read",
+      "response.read",
+      "sys.stdin.buffer.read",
+      "urllib.request.build_opener"
+    ]
+  },
+  {
+    "file": "line-1/tools/hash-snapshot/test_hash_snapshot.py",
+    "calls": [
+      "Path(__file__).with_name('example-mainnet.json').read_bytes",
+      "tool.public_read"
+    ]
+  },
+  {
+    "file": "line-1/tools/snapshot-timeline/test_snapshot_timeline.py",
+    "calls": [
+      "SOURCE.read_bytes",
+      "other.read_bytes"
+    ]
+  },
+  {
+    "file": "line-1/tools/snapshot-timeline/snapshot_timeline.py",
+    "calls": [
+      "SPEC.loader.exec_module",
+      "SystemExit",
+      "seal.read_bytes"
+    ]
+  },
+  {
+    "file": "line-1/tools/direct-capture/direct_capture.py",
+    "calls": [
+      "Path(__file__).with_name('example-pinned-zto.json').read_bytes",
+      "SystemExit",
+      "opener.open",
+      "public_read",
+      "response.read",
+      "spec.loader.exec_module",
+      "sys.stdout.write",
+      "urllib.request.build_opener"
+    ]
+  },
+  {
+    "file": "line-1/tools/direct-capture/test_direct_capture.py",
+    "calls": [
+      "Path(__file__).with_name('example-pinned-zto.json').read_bytes",
+      "Path(__file__).with_name('example-zto.json').read_bytes",
+      "opener.assert_not_called",
+      "parent.open.assert_not_called",
+      "tool.public_read"
+    ]
+  },
+  {
+    "file": "line-1/tools/pinned-snapshot/pinned_snapshot.py",
+    "calls": [
+      "SystemExit",
+      "public_read",
+      "read",
+      "spec.loader.exec_module",
+      "sys.stdin.buffer.read"
+    ]
+  },
+  {
+    "file": "line-1/tools/pinned-snapshot/test_pinned.py",
+    "calls": [
+      "Path(__file__).with_name('example-zto.json').read_text",
+      "tool.public_read"
+    ]
+  },
+  {
+    "file": "line-1/tools/block-field-crosscheck/test_block_field_crosscheck.py",
+    "calls": [
+      "EVIDENCE.read_bytes",
+      "EVIDENCE.read_bytes().replace",
+      "SOURCE.read_bytes",
+      "evidence.write_text",
+      "hashlib.sha256(EVIDENCE.read_bytes()).hexdigest",
+      "hashlib.sha256(SOURCE.read_bytes()).hexdigest",
+      "path.write_bytes",
+      "path.write_text",
+      "source.write_bytes",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-1/tools/block-field-crosscheck/block_field_crosscheck.py",
+    "calls": [
+      "SystemExit",
+      "cross.seal.read_bytes",
+      "read.add_argument",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-1/tools/transport-check/transport_check.py",
+    "calls": [
+      "SPEC.loader.exec_module",
+      "SystemExit",
+      "path.read_bytes"
+    ]
+  },
+  {
+    "file": "line-1/tools/endpoint-policy/test_policy.py",
+    "calls": [
+      "(ROOT / 'pinned-snapshot' / 'example-zto.json').read_text",
+      "pinned.public_read",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-1/tools/endpoint-policy/endpoint_policy.py",
+    "calls": [
+      "SPEC.loader.exec_module",
+      "SystemExit",
+      "sys.stdin.buffer.read"
+    ]
+  },
+  {
+    "file": "line-4/tools/bounded-capture-reader/test_reader.py",
+    "calls": [
+      "consumer.read_capture",
+      "fake_stream.read.assert_called_once_with",
+      "reader.main",
+      "reader.read_capture",
+      "self.path.write_bytes",
+      "self.path.write_text",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/bounded-capture-reader/reader.py",
+    "calls": [
+      "SystemExit",
+      "os.fdopen",
+      "os.open",
+      "read_capture",
+      "spec.loader.exec_module",
+      "stream.read"
+    ]
+  },
+  {
+    "file": "line-4/tools/bounded-capture-reader/test_companions.py",
+    "calls": [
+      "SOURCE.read_bytes",
+      "self.path.open",
+      "self.path.write_bytes",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-counterparties/test_counterparties.py",
+    "calls": [
+      "spec.loader.exec_module",
+      "tool.activity.read_capture"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-counterparties/counterparties.py",
+    "calls": [
+      "SystemExit",
+      "activity.read_capture",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/strict-rpc-json/test_strict_rpc.py",
+    "calls": [
+      "spec.loader.exec_module",
+      "strict.reader.read_capture"
+    ]
+  },
+  {
+    "file": "line-4/tools/strict-rpc-json/strict_rpc.py",
+    "calls": [
+      "reader.check_nesting",
+      "reader.read_capture",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-window-ledger/ledger.py",
+    "calls": [
+      "SystemExit",
+      "activity.reader.read_capture",
+      "read_capture",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-window-ledger/test_ledger.py",
+    "calls": [
+      "path.write_bytes",
+      "spec.loader.exec_module",
+      "tool.read_capture"
+    ]
+  },
+  {
+    "file": "line-4/tools/erc20-transfer-window/test_transfer_window.py",
+    "calls": [
+      "Path(__file__).with_name('observed_logs.json').read_text",
+      "opener.assert_not_called",
+      "self.rfile.read",
+      "self.send_error",
+      "self.send_header",
+      "self.send_response",
+      "self.wfile.write",
+      "thread.join",
+      "thread.start",
+      "threading.Thread",
+      "window.public_opener"
+    ]
+  },
+  {
+    "file": "line-4/tools/erc20-transfer-window/transfer_window.py",
+    "calls": [
+      "SystemExit",
+      "_rpc_spec.loader.exec_module",
+      "public_opener",
+      "public_opener().open",
+      "response.read",
+      "urllib.request.build_opener"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-crosscheck/test_crosscheck.py",
+    "calls": [
+      "(Path(__file__).parent / name).read_text",
+      "receipt_spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-crosscheck/crosscheck.py",
+    "calls": [
+      "(HERE / name).read_text",
+      "SystemExit",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-window-coverage/coverage.py",
+    "calls": [
+      "SystemExit",
+      "item['senders'].add",
+      "read_capture",
+      "reader.read_capture",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-window-coverage/test_coverage.py",
+    "calls": [
+      "(HERE.parent / 'transfer-crosscheck' / 'publicnode.json').read_text",
+      "coverage.read_capture",
+      "duplicate.write_text",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-window-receipt/receipt.py",
+    "calls": [
+      "SystemExit",
+      "read_capture",
+      "reader.read_capture",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-window-receipt/test_receipt.py",
+    "calls": [
+      "(HERE.parent / 'transfer-crosscheck' / 'publicnode.json').read_text",
+      "duplicate.write_text",
+      "receipt.read_capture",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-window-stitch/test_stitch.py",
+    "calls": [
+      "spec.loader.exec_module",
+      "tool.ledger.read_capture"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-window-stitch/stitch.py",
+    "calls": [
+      "SystemExit",
+      "ledger.read_capture",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-window-activity/test_activity.py",
+    "calls": [
+      "(HERE.parent / 'transfer-crosscheck' / 'publicnode.json').read_text",
+      "spec.loader.exec_module"
+    ]
+  },
+  {
+    "file": "line-4/tools/transfer-window-activity/activity.py",
+    "calls": [
+      "SystemExit",
+      "read_capture",
+      "reader.read_capture",
+      "spec.loader.exec_module"
+    ]
+  }
+]

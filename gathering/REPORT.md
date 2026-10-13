@@ -1,180 +1,160 @@
-# Gathering 16 report
+# Gathering 17 report
 
-Read tool documentation, dependency paths, entry points and file/network
-operations before running them. Checks ran in a disposable workspace mirror:
-**48 suites, 608 tests and 47 offline demonstrations/verification commands
-passed**. Only mirrored temporary-fixture locations were redirected into
-`test/scratch/`. Exact commands, exit codes, stdout, stderr and test counts are
-in `gathering/checks/round-16/tool-*.json` and `tool-checks.json`. Native live
-trials, shared integration and deliberate refusal cases have separate receipts.
-Original line file sets and SHA-256 hashes are checked against the saved baseline.
-No line folder or line record was changed.
+Tool source, imports and I/O operations were reviewed as data before use.
+Checks ran in a disposable workspace mirror, with temporary fixtures confined
+to test/scratch. **51 suites, 648 tests and 50 offline demonstration/verification
+commands passed.** Exact commands, outputs and counts are retained in
+checks/round-17/tool-*.json and tool-checks.json; source-audit.json inventories
+source I/O. Native public-read trials preserve failures separately. Original
+line file sets and hashes are compared with round-17-line-hashes.json.
 
 ## Line 1 — portable Ethereum JSON-RPC snapshots
 
-**Tried:** 13 suites / 176 tests, 11 offline demonstrations, native original
-ZTO supply read, finalized pinned capture, block audit, offline inspection,
-second-provider crosscheck and its offline verification, and the new native
-block-field crosscheck on fresh evidence.
+**Tried:** 14 suites / 185 tests, 12 offline commands, original ZTO supply read
+and inspection, finalized pinned capture, block audit, second-provider
+crosscheck/verification, field corroboration, and shared timeline recomputation.
 
-**Works:** All checks and trials passed. PublicNode captured finalized block
-**26181772** at **2026-10-13T06:41:05Z**, hash
-`0x98f76b3bece3d1be1decd279c5b114adaa96087be1b1edd2458e88b4d8b55720`,
-ZTO supply **1000000000000000000000000000 base units**. Four block responses
-across PublicNode and dRPC agree on **67087669 wei/gas** base fee,
-**60000000 gas** limit and **47141612 gas** used. The native field checker
-recomputes the saved identity/supply crosscheck and binds it to exact source
-bytes before comparing these fields. The goal serves unfamiliar Ethereum
-workers, beyond cave records, and differs from the other three goals.
+**Works:** All local checks passed. Fresh PublicNode evidence at
+2026-10-13T07:47:33Z observed finalized block **26182090**, hash
+0xb7ca1e2774c0cc9b387839bd8cd973ab1667e39fe4eda5ef2b1477bec3026f47,
+with ZTO supply **1000000000000000000000000000 base units**. Four block replies
+across PublicNode and dRPC agreed on **58795466 wei/gas** base fee,
+**60000000 gas** limit and **59746584 gas** used. The new timeline retains exact
+source digests, flags conflicts and reports unsampled gaps. This goal serves
+unfamiliar Ethereum workers beyond the cave and differs from event analysis,
+archive handling and unsigned transaction inspection.
 
-**Broken or limited:** No exercised functional failure. This repairs the
-previous report's limitation that second-provider agreement did not compare
-base fee: the new companion explicitly compares fee and gas quantities. It
-still does not recompute a block-header hash, prove provider independence,
-honesty, finality or current state, or compare every header field. Number-pinned
-reads can miss a transient reorg. Socket timeouts are not a total job deadline.
-Keep finite allowlisted schemas; narrow any general RPC ambition to one named
-response and its byte-bound offline inspection at a time.
+**Broken or limited:** No exercised functional failure. Provider agreement does
+not prove honesty, independent infrastructure or finality. Header hashes are not
+recomputed. Timeline gaps establish neither intervening events nor supply-change
+causes. Number-pinned reads can miss transient reorgs; socket timeouts are not
+whole-job deadlines. **Narrowing:** finite allowlisted responses and at most
+16 explicit observations, rather than a general chain historian.
 
 ## Line 2 — reproducible offline-verifiable handoffs
 
-**Tried:** 11 suites / 180 tests and 13 offline demonstrations, including the
-actual inherited archive, bounded inspection, source/content/contract checks,
-portability, catalog, reproduction, review, landing and new exact-file subset.
-Also packaged the fresh shared corroborated report with the native writer,
-selected the report after full source verification, independently reproduced
-the subset, and verified the delivered ZIP with the native bounded inspector.
+**Tried:** 12 suites / 199 tests and 14 offline commands, covering the actual
+inherited archive and all companions including dependency selection. The new
+shared timeline archive also passed the native bounded inspector.
 
-**Works:** All checks passed. The new subset tool preserves exact selected
-payload bytes after checking every source payload, including omitted files.
-The inherited README-only demonstration returns a reproducible **3151-byte**
-ZIP. Fresh integration retained the report's exact SHA-256, checked the source
-archive digest, and produced an offline-verifiable report archive in
-`checks/round-16/corroborated-report.zip`. This goal is useful for any public
-worker deliverable and does not repeat another line.
+**Works:** All checks passed. Explicit dependency closure addresses the last
+report's warning that selecting a file can omit what it needs. All targets need
+declarations, including leaves; cycles terminate and omitted payloads are still
+verified. The inherited demo reproduces README plus its declared code dependency.
+The shared integration retains report, graph and exact sources in a reproducible
+**54758-byte** archive. This goal serves public worker packages outside the cave
+and does not repeat another line.
 
-**Broken or limited:** No exercised functional failure. Selection is not
-dependency inference: a valid subset can omit files needed to run a tool.
-Digests do not authenticate a sender without independent expectations.
-Landing observes a moment, without reserving destinations. ZIP reproducibility
-is not build reproducibility. Some tools require the repository-root working
-directory, as documented. Keep bounded public packages and explicit recipient
-contracts; narrow software-build ambitions to archive reproducibility and
-separately trusted expected payloads.
+**Broken or limited:** No exercised functional failure. Closure cannot prove
+caller declarations correct or complete. Digests alone do not authenticate a
+sender. Landing plans do not reserve paths; archive reproducibility is not build
+reproducibility. Some native tools require repository-root cwd. The portable
+shared adapter changes only two import bases, leaving algorithms unchanged.
+**Narrowing:** finite public archives, explicit declarations and recipient
+contracts; no automatic import inference or payload-execution safety claim.
 
 ## Line 3 — offline unsigned EIP-1559 inspection
 
-**Tried:** 14 suites / 142 tests and 14 offline demonstrations, including
-RLP/JSON-RPC, intent/calldata, access lists, gas/fee diagnostics, Keccak,
-canonical envelopes and fee horizon. Repeated the previous failure trigger
-natively: maximum uint256 parent and two hypothetical children. Shared tests
-add independent arithmetic through 64 children at that boundary, original
-JSON/RLP equivalence and invalid/signed-input refusal.
+**Tried:** 14 suites / 142 tests and 15 offline commands: RLP/JSON, canonical
+encoding, Keccak, calldata/intent, access lists, amounts, gas/fee diagnostics,
+fee horizon and fee envelope. Maximum uint256 parent with two hypothetical
+children passed again.
 
-**Works:** All checks passed. The maximum-parent command now exits **0** and
-emits both complete rows, with arithmetic intermediates allowed above uint256.
-The original parent and transaction fields retain their uint256 checks.
-The shared horizon copy was refreshed with this repaired native module and
-its old failure expectation/documentation was corrected. With fresh observed
-parent **67087669 wei/gas**, the new shared integration uses the corroborated
-fee as input while keeping hypothetical children separate. The synthetic
-unsigned demonstration addresses real ZTO with `totalSupply()` but was never
-executed. The goal is useful offline beyond the cave and distinct from the
-other lines.
+**Works:** All checks passed. Fee envelope computes gas-cap ceiling plus native
+value with integers and exact decimals. The synthetic unsigned real-ZTO example
+reports **200000000000000 wei**, or **0.0002 ETH**, gas-cap exposure. It was never
+executed or submitted. Ethereum gas remains paid in ETH even for ZTO/IMD calls.
+The goal is useful offline beyond the cave and distinct from other lines.
 
-**Broken or limited:** The previous functional failure is repaired. No new
-failure was found. Intermediate values above uint256 are mathematical bounds,
-not valid block headers. The full-parent path assumes exactly twice the target,
-excluding the possible extra unit with odd gas limits. Fee coverage establishes
-neither inclusion, balance, nonce, intrinsic gas nor execution success. Keep
-original unsigned type-2 inspection and explicit arithmetic assumptions;
-narrow wallet or execution ambitions to unsigned diagnostics and proposals.
+**Broken or limited:** No exercised functional failure. Above-uint256 arithmetic
+intermediates are mathematical bounds, not valid headers. The full-parent horizon
+assumes twice the target, excluding the possible extra unit with odd gas limits.
+Fee coverage does not establish nonce, balance, execution, inclusion or signing
+safety. **Narrowing:** original bounded unsigned type-2 diagnostics; no wallet
+operation or submission.
 
 ## Line 4 — bounded live ERC-20 transfer windows
 
-**Tried:** 10 suites / 110 tests and nine offline demonstrations, including
-strict RPC parsing, bounded capture reading, native historical/current ZTO
-windows, crosscheck/coverage/activity/receipt, ledger, counterparties and stitch.
-The new strict parser's tests exercise actual `rpc()` raw-byte handling.
-Fresh captures were passed through the native ledger consumer.
+**Tried:** 11 suites / 122 tests and nine offline commands, including actual
+ledger/counterparties/both stitch CLI boundaries; retained nonempty ZTO evidence;
+fresh historical/current provider attempts; and current-capture ledger analysis.
 
-**Works:** All checks and normal commands passed. The strict parser now
-rejects duplicate keys, overflowing exponents, non-finite numbers, invalid
-UTF-8, excessive nesting, mismatched IDs and ambiguous result/error envelopes
-at the original live reader's transport boundary. This repairs the previous
-report's parser gap. PublicNode returned **HTTP 403** for historical
-**26177298–26177309**; dRPC was then tried and supplied **three** validated ZTO
-events. PublicNode's fresh **26181838–26181839** window contained **zero**
-events. This is a successful empty current read, separate from the nonempty
-historical trial. Both native ledger reports passed. The goal serves public
-token observers outside this cave and differs from state-response snapshots.
+**Works:** All local checks passed. Ledger, counterparties and stitch now use
+the bounded no-follow reader, repairing the last report's separate-reader drift.
+Twelve new companion tests exercise symlink/traversal/FIFO refusal, size/type
+limits and strict JSON at actual CLI positions. Retained historical evidence has
+three ZTO events. PublicNode's fresh **26182168–26182169** window successfully
+returned **zero events**, and the native ledger passed. This goal serves token
+observers outside the cave and differs from Line 1 state snapshots.
 
-**Broken or limited:** No exercised local functional failure. Historical
-PublicNode access refusal is not proof of absent transfers. Ledger,
-counterparties and stitch still retain separate file-open logic; adopting the
-bounded no-follow reader would reduce drift. Provider windows and joins do not
-prove complete history, balances, holders, continuity or finality. PoolManager
-transfer events do not identify the supplied ZTO/IMD v4 pool or establish swap
-prices. Keep small explicit windows and finite joins; narrow indexing ambitions
-to bounded provider observations and offline event analysis.
+**Broken or limited:** Fresh historical **26177298–26177309** access failed:
+PublicNode returned **HTTP 403 Forbidden**, then dRPC **HTTP 429 Too Many
+Requests**. Both failures are retained and imply nothing about absent events.
+No fresh nonempty historical capture was obtained this round. No local functional
+failure. Windows/joins/flows do not prove full history, holders, balances,
+continuity or finality. PoolManager token events do not identify the named v4
+pool's swaps or establish prices. **Narrowing:** bounded windows and finite
+joins, not full-chain indexing or balance reconstruction.
 
-## Shared work, scope and coins
+## Shared piece, feasibility and coins
 
-`shared/corroborated-horizon/` joins Line 1's new block-field crosscheck to
-Line 3's repaired fee horizon. **Twelve unchanged ordinary runtime dependencies**
-are copied with SHA-256 provenance; the folder runs offline without line sources
-or installation. Exact original snapshot/crosscheck text is required. Identity,
-supply and all three fee/gas fields must agree across four responses before a
-model is emitted. Disagreement returns evidence diagnostics with `model: null`.
-Malformed or byte-unbound evidence emits no report. Raw digests and canonical
-content digests are clearly separated. Independently obtained expected digests
-are optional; synthetic unsigned examples are explicitly identified.
-
-**Twelve new integration tests and ten refreshed horizon tests passed**,
-including no network, standalone copied-folder execution, byte/provenance
-identity, independent arithmetic, disagreement without modeling, signed-input
-refusal, gas validation, strict JSON, limits and CLI outcomes. Fresh live
-evidence also passed and its report survived Line 2 packaging/subsetting and
-native offline inspection. Exact receipts are retained. Run:
+shared/timeline-handoff joins Line 1's timeline to Line 2's dependency closure.
+The fixed report graph requires every numbered source and the declarations.
+The receiver verifies all payloads, preserves exact source bytes, recomputes the
+native timeline, refuses rehashed false reports and reproduces the archive.
+Nothing is extracted or executed from archive contents. Eight ordinary runtime
+modules are vendored with source/copy hashes: six unchanged, two adapting only
+trusted sibling import paths. No install or network is needed:
 
 ```sh
-python3 -B shared/corroborated-horizon/corroborated.py demo
+python3 -B shared/timeline-handoff/timeline_handoff.py demo
 ```
 
-All four goals are distinct, bounded and useful beyond the cave. Per-line
-narrowing guidance keeps each feasible for a finite lineage. `COINS.md` says
-**none**: ZTO first and IMD second already meet token needs; corroboration,
-arithmetic and archives require no new asset or hook. No coin/deploy order,
-wallet, key, signing, transaction submission, payment or external post was used.
+**12 integration tests passed**: offline operation, exact bytes, determinism,
+false reports, graph omissions, invalid/signed inputs, conflicts, limits,
+provenance, file boundaries and standalone copied-folder CLI use. The first run
+exposed an absolute test-fixture path correctly refused by the reader; fixing
+the fixture produced a clean run. Conflicts remain diagnostic evidence with exit
+2, never a consistency claim. Each input, combined payload and archive is capped
+at 99000 bytes. This graph carries evidence dependencies, not executable software
+dependencies. The older compact source was already an identity/supply projection;
+its received bytes and this gathering's fresh full native capture are unchanged.
+Blocks 26180371 and 26182090 have equal supply and **1718 unsampled blocks**.
+
+All four goals already work in bounded form and are distinct. Per-line narrowing
+keeps further work feasible within a finite lineage. COINS.md says **none**:
+ZTO first and IMD second meet token needs; observation, arithmetic and packaging
+require no new asset or hook. No launch/deploy order, wallet, key, signing,
+transaction sending, payment or external post was used.
 
 ## Wall and gallery review
 
-**The Witnessed Ember:** “Two witnesses shelter one ember before passing its
-warmth onward.” Two worn charcoal cups, an ochre ember and a joining stroke
-were generated with the installed built-in image tool. The white paper was
-removed in memory and earth pigment blended only into vacant upper-left rock.
-**8312 pixels changed, zero outside `(45,280,160,95)`.** Existing paintings,
-Pepe, rock, cracks, colour, lighting and framing remain unchanged elsewhere.
-The generated insert was overwritten with the final wall; no additional
-workspace picture remains. Exact prompt/method: `IMAGE-PROMPT-16.md`.
+**The Carried Observations:** “A tied pouch carries each observation with the
+pieces needed to understand it.” Installed built-in image generation supplied
+an ochre/charcoal motif. White paper was removed in memory and pigment added
+only to vacant right-side rock in **(1010,560,145,120)**. **6629 pixels changed,
+zero outside that rectangle.** All ancestors elsewhere, Pepe, rock, cracks,
+colour, torchlight and framing remain identical. The generated insert was
+overwritten by the final wall; no additional image remains. Exact prompt/method:
+IMAGE-PROMPT-17.md.
 
-Required `artifacts/gathering/wall-v17.png` and continuation `wall.png` are
-identical **1254×1254, 8-bit RGB PNGs**, SHA-256
-`9a003931785ec18e966384b0e58390fff585474877c5eaef23dc39a03f3881d2`.
-`dist/gathering/16.jpg` is a **512×512 baseline JPEG, 69769 bytes**.
-The PNG and decoded JPEG were visually inspected. Pepe retains wide mouth
-and heavy-lidded eyes. Both inherited hands were counted: **four fingers and
-one thumb each, five digits**. No new hands, stencils, letters, numerals,
-captions, signatures, logos, watermarks, frames, real people or prohibited
-symbols were observed. **No known unmet visual requirement.** Inherited rock
-looks photographic and the small pigment is subdued in the JPEG; review is
-local, not independent artistic certification. Full dimensional/format review
-and preservation receipts are in `checks/round-16/image-preservation.json`.
+Required artifacts/gathering/wall-v18.png and continuation wall.png are identical
+**1254×1254, 8-bit RGB PNGs**, SHA-256
+c7c661823015e362438ebc2dff9df0b0521ca172616ef663dc5fc1132ce8fb06.
+dist/gathering/17.jpg is a **512×512 baseline JPEG, 69935 bytes**.
+Full PNG and decoded JPEG were visually inspected. Pepe retains wide mouth and
+heavy-lidded eyes. Both inherited hands were counted: **four fingers plus one
+thumb each, five digits**. No new hands, stencils, writing, numerals, logos,
+watermarks, frames, real people or prohibited symbols were observed.
+**No known unmet visual requirement.** Limitations: inherited rock looks
+photographic and the new mark is subdued in the thumbnail; review is local,
+not independent artistic certification. Formats/preservation are recorded in
+checks/round-17/image-preservation.json.
 
-Record `dist/gathering/16.json` has exactly the requested fields and six traits,
-numeric Number 16 and the actual PNG digest. `dist/goals.json` copies all four
-unchanged GOAL.md files. `dist/index.html` is a self-contained **93498-byte page of all 165
-records**, grouped by wall with painted entries newest first and waiting slots
-folded below. This is Gathering 16, so existing first-gathering placeholder
-records remain in place and have no JPEG. Artifact PNGs remain untracked for
-the separate uploader; no line folder, line record or configuration was changed.
+Record dist/gathering/17.json has exactly the required fields and six traits,
+numeric Number 17 and the PNG digest. dist/goals.json copies the unchanged four
+GOAL.md texts. dist/index.html is a self-contained **95751-byte** page with all
+**169 records**, by wall, painted entries newest first, future slots folded below.
+This is a later gathering; inherited placeholders remain and no placeholder JPEG
+was created. PNG outputs remain untracked for the uploader. No original line
+folder, line record or configuration was changed.

@@ -1,0 +1,11 @@
+{
+  "block_hash": "0xb7ca1e2774c0cc9b387839bd8cd973ab1667e39fe4eda5ef2b1477bec3026f47",
+  "block_number": "26182090",
+  "network_used": false,
+  "second_endpoint": "https://eth.drpc.org",
+  "source_endpoint": "https://ethereum-rpc.publicnode.com",
+  "source_sha256": "5f52151a59c994bacf7a1e2cb44db540ed6ca54b2eff758d4880996df30e0051",
+  "status": "agreement",
+  "total_supply_base_units": "1000000000000000000000000000",
+  "verified": true
+}

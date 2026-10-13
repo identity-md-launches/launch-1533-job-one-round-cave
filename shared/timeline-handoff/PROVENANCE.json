@@ -1,0 +1,82 @@
+[
+  {
+    "source": "line-1/tools/snapshot-timeline/snapshot_timeline.py",
+    "copy": "vendor/snapshot-timeline/snapshot_timeline.py",
+    "source_sha256": "7dcece4777fbc262afac3c7d9c6f3c1526723d9852d12c5565fa7a507d97212a",
+    "copy_sha256": "7dcece4777fbc262afac3c7d9c6f3c1526723d9852d12c5565fa7a507d97212a",
+    "unchanged": true,
+    "adaptation": null
+  },
+  {
+    "source": "line-1/tools/snapshot-seal/snapshot_seal.py",
+    "copy": "vendor/snapshot-seal/snapshot_seal.py",
+    "source_sha256": "19e05ff2d222e536edad85e7157ec4f67557c21c93f0e71fb754816ed3dd155b",
+    "copy_sha256": "19e05ff2d222e536edad85e7157ec4f67557c21c93f0e71fb754816ed3dd155b",
+    "unchanged": true,
+    "adaptation": null
+  },
+  {
+    "source": "line-1/tools/pinned-snapshot/pinned_snapshot.py",
+    "copy": "vendor/pinned-snapshot/pinned_snapshot.py",
+    "source_sha256": "c59f0cbf2837f6c2c4b7763f5230fbad26ae9545067036198140aef85f321311",
+    "copy_sha256": "c59f0cbf2837f6c2c4b7763f5230fbad26ae9545067036198140aef85f321311",
+    "unchanged": true,
+    "adaptation": null
+  },
+  {
+    "source": "line-1/tools/rpc-snapshot/rpc_snapshot.py",
+    "copy": "vendor/rpc-snapshot/rpc_snapshot.py",
+    "source_sha256": "1de12a17cf5bced74e97782c9433e31a9e6a42bf8fe7a6b2ed6a6b01cc5e858b",
+    "copy_sha256": "1de12a17cf5bced74e97782c9433e31a9e6a42bf8fe7a6b2ed6a6b01cc5e858b",
+    "unchanged": true,
+    "adaptation": null
+  },
+  {
+    "source": "line-2/tools/handoff-dependencies/dependencies.py",
+    "copy": "vendor/handoff-dependencies/dependencies.py",
+    "source_sha256": "3e3fb3899e6de289e5bc91ac2396e4ab23bc40905082f9de1a10a5979d36124c",
+    "copy_sha256": "0444a2964a688b3bca3f3552307180fa542c3c86546f01e583478074592167d9",
+    "unchanged": false,
+    "adaptation": "Resolve trusted sibling imports relative to vendored module, rather than cwd/line-2/tools; algorithm unchanged."
+  },
+  {
+    "source": "line-2/tools/handoff-subset/subset.py",
+    "copy": "vendor/handoff-subset/subset.py",
+    "source_sha256": "3266695c03cedc1a7cdb09bce3396c72b7ce3bb93c02f37ea4b611731e45bf3f",
+    "copy_sha256": "76e1597b1112ede0e33f5994e5f667c56b2ac22e956fc195e42f9dc7e247f95d",
+    "unchanged": false,
+    "adaptation": "Resolve trusted sibling imports relative to vendored module, rather than cwd/line-2/tools; algorithm unchanged."
+  },
+  {
+    "source": "line-2/tools/handoff-inspect/inspect_handoff.py",
+    "copy": "vendor/handoff-inspect/inspect_handoff.py",
+    "source_sha256": "62cc8e4b31c231eb394bd5f3053c2db29c05fc4fa62d3aeafe76027a52b8103a",
+    "copy_sha256": "62cc8e4b31c231eb394bd5f3053c2db29c05fc4fa62d3aeafe76027a52b8103a",
+    "unchanged": true,
+    "adaptation": null
+  },
+  {
+    "source": "line-2/tools/handoff/handoff.py",
+    "copy": "vendor/handoff/handoff.py",
+    "source_sha256": "0b3878b76c13a18951601aef2ec48daf8c56fbb195fea953be797a7f1d8df97d",
+    "copy_sha256": "0b3878b76c13a18951601aef2ec48daf8c56fbb195fea953be797a7f1d8df97d",
+    "unchanged": true,
+    "adaptation": null
+  },
+  {
+    "source": "line-1/tools/pinned-transport-check/example-zto.json",
+    "copy": "examples/earlier.json",
+    "source_sha256": "fb0ca3e597455eeaf144376343292e55ce4b99bbd2ce2876c7a1aaaeb0a0516e",
+    "copy_sha256": "fb0ca3e597455eeaf144376343292e55ce4b99bbd2ce2876c7a1aaaeb0a0516e",
+    "unchanged": true,
+    "adaptation": null
+  },
+  {
+    "source": "gathering/checks/round-17/pinned-zto-supply.json",
+    "copy": "examples/later.json",
+    "source_sha256": "5f52151a59c994bacf7a1e2cb44db540ed6ca54b2eff758d4880996df30e0051",
+    "copy_sha256": "5f52151a59c994bacf7a1e2cb44db540ed6ca54b2eff758d4880996df30e0051",
+    "unchanged": true,
+    "adaptation": null
+  }
+]

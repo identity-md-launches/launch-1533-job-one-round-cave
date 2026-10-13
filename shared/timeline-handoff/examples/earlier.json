@@ -1,0 +1,28 @@
+{
+  "schema": "pinned-zto-snapshot/1",
+  "captured_at": "2026-10-13T02:02:46Z",
+  "endpoint": "https://ethereum-rpc.publicnode.com",
+  "chain_id": "0x1",
+  "requested_block": "finalized",
+  "block": {
+    "number": "0x18f7b13",
+    "hash": "0xbb136482ae677436ff2afc3fd3b449e6d5b4fcf62ad90e8d8984b6b6d8a00e33",
+    "parentHash": "0x9d2ea2fff7495118dfd8eccb3de2e0fccde24ba8e7e3af72b5a49043d121d22c",
+    "timestamp": "0x6acd8d57"
+  },
+  "block_after": {
+    "number": "0x18f7b13",
+    "hash": "0xbb136482ae677436ff2afc3fd3b449e6d5b4fcf62ad90e8d8984b6b6d8a00e33",
+    "parentHash": "0x9d2ea2fff7495118dfd8eccb3de2e0fccde24ba8e7e3af72b5a49043d121d22c",
+    "timestamp": "0x6acd8d57"
+  },
+  "method": "eth_call",
+  "params": [
+    {
+      "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "data": "0x18160ddd"
+    },
+    "0x18f7b13"
+  ],
+  "result": "0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000"
+}

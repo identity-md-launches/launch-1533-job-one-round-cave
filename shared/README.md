@@ -174,3 +174,20 @@ python3 -B shared/corroborated-horizon/corroborated.py demo
 
 Twelve integration tests passed. Fresh real ZTO evidence also passed; Line 2's
 subset tool carried its report into a reproducible, offline-verified archive.
+
+## Timeline handoff (Gathering 17)
+
+[timeline-handoff](timeline-handoff/README.md) joins Line 1's bounded ZTO supply
+timeline to Line 2's explicit dependency closure. Exact source observations,
+declarations and report travel together in a reproducible archive; the receiver
+recomputes the timeline and rejects a rehashed false report. Eight vendored
+ordinary modules make the complete folder portable, without line sources or
+installation. Two import bases are adapted with exact source/copy provenance.
+
+```sh
+python3 -B shared/timeline-handoff/timeline_handoff.py demo
+```
+
+Twelve integration tests passed. The demo uses dated real ZTO evidence, preserves
+unsampled gaps and carries conflicts as diagnostics. Integrity does not establish
+provider honesty, complete history, finality, balances or a sender's identity.

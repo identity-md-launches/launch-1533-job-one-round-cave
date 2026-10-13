@@ -1,0 +1,38 @@
+{
+  "archive_bytes": 54758,
+  "archive_sha256": "7b747547a321c4d45dafeb3a8fe5c277a967dd0039479a08bffdb6f1eb5ab225",
+  "file_count": 4,
+  "files": [
+    {
+      "bytes": 924,
+      "path": "evidence/00.json",
+      "sha256": "fb0ca3e597455eeaf144376343292e55ce4b99bbd2ce2876c7a1aaaeb0a0516e"
+    },
+    {
+      "bytes": 50186,
+      "path": "evidence/01.json",
+      "sha256": "5f52151a59c994bacf7a1e2cb44db540ed6ca54b2eff758d4880996df30e0051"
+    },
+    {
+      "bytes": 166,
+      "path": "review/dependencies.json",
+      "sha256": "c3abf019317f37b1e58d9f73115bd4723f20d98f8ab4ab1b551298cf8d48f977"
+    },
+    {
+      "bytes": 2380,
+      "path": "review/timeline.json",
+      "sha256": "a5154bb2e7c7efe30b09f7dddbe3b338d4ddcaef342a5782b59b0e1b062d4196"
+    }
+  ],
+  "format": "handoff-inspection-v1",
+  "limits": {
+    "archive_bytes": 69206016,
+    "files": 1000,
+    "manifest_bytes": 524288,
+    "metadata_bytes": 524288,
+    "payload_bytes": 67108864
+  },
+  "payload_bytes": 53656,
+  "trusted_digest_matched": false,
+  "verified": true
+}

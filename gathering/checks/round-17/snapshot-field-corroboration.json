@@ -1,0 +1,48 @@
+{
+  "block_hash": "0xb7ca1e2774c0cc9b387839bd8cd973ab1667e39fe4eda5ef2b1477bec3026f47",
+  "block_number": "26182090",
+  "crosscheck_sha256": "878f52cec77a02be5143b6a9c68b615a321c66c3f8d8342336b00388fbe67384",
+  "disagreeing_fields": [],
+  "evidence_limits": "Comparison of three named header quantities in four saved provider responses. No header-hash recomputation, signature, independence, honesty, finality, or current-state proof. Agreement does not corroborate other block fields.",
+  "fields": {
+    "baseFeePerGas": {
+      "agreement": true,
+      "observations": {
+        "second_after": "58795466",
+        "second_before": "58795466",
+        "source_after": "58795466",
+        "source_before": "58795466"
+      },
+      "unit": "wei_per_gas"
+    },
+    "gasLimit": {
+      "agreement": true,
+      "observations": {
+        "second_after": "60000000",
+        "second_before": "60000000",
+        "source_after": "60000000",
+        "source_before": "60000000"
+      },
+      "unit": "gas"
+    },
+    "gasUsed": {
+      "agreement": true,
+      "observations": {
+        "second_after": "59746584",
+        "second_before": "59746584",
+        "source_after": "59746584",
+        "source_before": "59746584"
+      },
+      "unit": "gas"
+    }
+  },
+  "identity_and_supply_status": "agreement",
+  "network_used": false,
+  "schema": "zto-block-field-crosscheck/1",
+  "second_endpoint": "https://eth.drpc.org",
+  "source_endpoint": "https://ethereum-rpc.publicnode.com",
+  "source_sha256": "5f52151a59c994bacf7a1e2cb44db540ed6ca54b2eff758d4880996df30e0051",
+  "status": "agreement",
+  "token": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+  "total_supply_base_units": "1000000000000000000000000000"
+}

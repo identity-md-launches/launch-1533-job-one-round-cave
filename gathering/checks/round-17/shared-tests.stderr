@@ -1,0 +1,17 @@
+test_bounds_and_types (__main__.Tests.test_bounds_and_types) ... ok
+test_conflicts_are_preserved_as_diagnostics (__main__.Tests.test_conflicts_are_preserved_as_diagnostics) ... ok
+test_graph_cannot_omit_source_even_with_valid_manifest (__main__.Tests.test_graph_cannot_omit_source_even_with_valid_manifest) ... ok
+test_independently_supplied_digest (__main__.Tests.test_independently_supplied_digest) ... ok
+test_invalid_snapshot_and_signed_fields_refused (__main__.Tests.test_invalid_snapshot_and_signed_fields_refused) ... ok
+test_missing_or_added_dependency_refused (__main__.Tests.test_missing_or_added_dependency_refused) ... ok
+test_noncanonical_report_bytes_refused (__main__.Tests.test_noncanonical_report_bytes_refused) ... ok
+test_provenance_bytes (__main__.Tests.test_provenance_bytes) ... ok
+test_real_evidence_exact_offline_and_reproducible (__main__.Tests.test_real_evidence_exact_offline_and_reproducible) ... ok
+test_rehashed_false_report_refused (__main__.Tests.test_rehashed_false_report_refused) ... ok
+test_standalone_cli_exclusive_output_conflict_and_no_extraction (__main__.Tests.test_standalone_cli_exclusive_output_conflict_and_no_extraction) ... ok
+test_workspace_file_boundaries (__main__.Tests.test_workspace_file_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.689s
+
+OK
