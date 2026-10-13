@@ -1,0 +1,33 @@
+{
+  "source_record": 36,
+  "record_number": 37,
+  "source_sha256": "0a8078c557049a90902503e5e695383af11f596e5a2d040953b4f7ca4e14dfdb",
+  "generated_sha256": "c59cfa6dffdd2c37d28b8debf4651c901b768ced412914d6ae74f788f2f5ffba",
+  "wall_sha256": "3b54f2fc823ce3f6eb893f83724257dd3cf66e3874cbde03758179899cf520b5",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "8-bit RGB PNG",
+  "png_bytes": 3824153,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "jpeg_bytes": 72296,
+  "addition_rectangle": [
+    361,
+    407,
+    110,
+    98
+  ],
+  "changed_pixels": 3016,
+  "changed_pixels_outside_rectangle": 0,
+  "new_hands_or_stencils": 0,
+  "unmet_visual_requirements": [],
+  "visual_limitations": [
+    "Inherited rock has a photographic appearance and is preserved."
+  ],
+  "visual_review": "Inspected final PNG and 512px JPEG. Three small ascending stones are visible on previously open rock beside Pepe. Original wide mouth, heavy-lidded eyes, rock, cracks, light and framing remain. Both inherited hands retain four fingers and one thumb each, five digits each. No new hands or stencils; no letters, numerals, captions, signatures, logos, watermarks, borders, real people or prohibited symbols seen."
+}
