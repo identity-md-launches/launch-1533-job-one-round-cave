@@ -1,0 +1,49 @@
+{
+  "ancestor_sha256": "1291ac6e418349f7e78b4908ed9eebece007ed58e0ab00d0733150054bc2aebc",
+  "generated_motif_sha256": "b46fb06c6e20169540a46a57fe79f7b970fe6785e9f47d8bde3003ec2d90df42",
+  "wall_sha256": "ab525418e3ab76250e40ecab444281e6567f332bb209d379d3efa5771bf99678",
+  "wall": {
+    "paths": [
+      "artifacts/line-2/wall.png",
+      "artifacts/line-2/wall-v18.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bit_depth": 8,
+    "bytes": 3944281
+  },
+  "thumbnail": {
+    "path": "dist/line-2/37.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "baseline JPEG",
+    "bytes": 75658
+  },
+  "preservation": {
+    "patch_xywh": [
+      960,
+      177,
+      140,
+      140
+    ],
+    "changed_pixels": 5757,
+    "changed_pixels_outside_patch": 0
+  },
+  "unmet_visual_requirements": [],
+  "visual_review": "Inspected full PNG and decoded JPEG: Pepe retains wide mouth and heavy-lidded eyes; four fingers plus one thumb on each inherited hand; no new hands or stencils, lettering, numbers, captions, logos, watermarks, borders, real people or prohibited symbols observed.",
+  "hands": {
+    "inherited_visible_hands": 2,
+    "digits_per_hand": [
+      5,
+      5
+    ],
+    "new_hands_or_stencils": 0
+  },
+  "limitations": [
+    "Local review is not independent artistic certification.",
+    "Inherited rock has a photographic appearance; no new photograph or render was introduced.",
+    "The small added pigment motif is subdued at thumbnail size."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "record_shape_valid": true,
+  "number": 37,
+  "goal_unchanged": true,
+  "older_records_unchanged": 36,
+  "scope_valid": true,
+  "all_changed_nonartifact_files_under_100000_bytes": true,
+  "outputs_untracked": true,
+  "images": {
+    "artifacts/line-2/wall-v18.png": {
+      "format": "PNG",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 3944281
+    },
+    "artifacts/line-2/wall.png": {
+      "format": "PNG",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "bytes": 3944281
+    },
+    "dist/line-2/37.jpg": {
+      "format": "JPEG",
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "bytes": 75658
+    }
+  },
+  "wall_sha256": "ab525418e3ab76250e40ecab444281e6567f332bb209d379d3efa5771bf99678",
+  "independent_pixel_comparison": {
+    "changed_pixels": 5757,
+    "outside_patch": 0
+  },
+  "unmet_visual_requirements": []
+}

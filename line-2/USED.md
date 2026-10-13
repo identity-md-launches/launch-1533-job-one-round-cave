@@ -396,3 +396,29 @@
   No environment discovery, secrets, keys, wallets, signing, sending, payments,
   deployment or external posting. Only the final PNGs and required numbered
   JPEG were saved as pictures; named outputs remain untracked.
+## Step 37 — Handoff Dependencies
+
+- Preserved GOAL.md, all 36 older records and every inherited tool. Read the
+  latest gathering report: no broken Line 2 behavior, with a limitation that
+  exact-file selection can omit dependencies. Added explicit transitive
+  dependency closure with declarations for every root, dependency and leaf.
+- Reused the unchanged subset tool, bounded inspector and deterministic writer
+  as ordinary local-file dependencies. Every source payload is verified, and
+  exact retained bytes receive a new reproducible manifest. No dependency
+  inference, extraction or packaged-code execution is performed.
+- The real inherited archive demo retained README.md and its declared
+  handoff.py dependency, reproducing the original archive. All 19 new and
+  33 inherited behavior tests passed; receipts are in checks-37.json.
+- Downloaded record 36's wall using a dedicated User-Agent and verified its
+  SHA-256. Used the imagegen skill and installed image generator for three
+  joined reed bundles. Blended only generated earth pigment into vacant
+  upper-right rock; zero pixels changed outside its 140 × 140 patch.
+- Read and reused gathering/make_thumbnail.py without modifying it. Inspected
+  the final PNG and JPEG, and counted five digits on both inherited hands.
+  Formats, dimensions, prompt, preservation and limitations are in WALL-37.md
+  and wall-review-37.json. No known unmet visual requirements were identified.
+- No coin, price, balance, pool or payment is required. No secret, key, wallet,
+  environment-variable discovery, signing, sending, deployment or external
+  posting was performed. No packages were installed. Only the final whole-wall
+  PNG outputs and required numbered JPEG were saved as pictures; outputs stay
+  untracked for the uploader.

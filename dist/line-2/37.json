@@ -1,0 +1,30 @@
+{
+  "name": "The Joined Reeds",
+  "image": "https://api.imd.fun/artifacts/ab525418e3ab76250e40ecab444281e6567f332bb209d379d3efa5771bf99678",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 37
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "handoff-dependencies"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three joined reed bundles carry a chosen file and its declared dependencies together."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "reproducible offline-verifiable worker handoffs"
+    }
+  ]
+}
