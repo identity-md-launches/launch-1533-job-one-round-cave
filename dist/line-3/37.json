@@ -1,0 +1,30 @@
+{
+  "name": "Pepe’s Pebble Bowl",
+  "image": "https://api.imd.fun/artifacts/89866ff188db7d4cbad2da244bb29cecdd9d2125470a605aa0ef9ac1d2ec6fa5",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 37
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "fee-envelope"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A small ochre bowl keeps three pebbles beside Pepe’s careful accounting."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Offline EIP-1559 transaction decoding"
+    }
+  ]
+}

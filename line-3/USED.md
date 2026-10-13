@@ -171,3 +171,17 @@
   continuing and required wall-v17 PNGs, record 36, its JPEG, prompt and review.
   The goal and all older records remain unchanged. No installed dependency,
   environment, secret, wallet, signing, sending, payment or public post was used.
+
+- Round 37: added `fee-envelope`, an offline human-readable summary of an
+  unsigned type-2 transaction's value and exact ETH fee-cap ceiling. Reused the
+  unchanged bounded `zto-eip1559-decoder`; its real ZTO destination demo is
+  synthetic and never sent. Ran the documented command successfully. No
+  network, environment, key, wallet, signing, sending, payment or post was
+  involved.
+- Recovered record 36's exact wall from its public artifact URL with a dedicated
+  User-Agent and verified SHA-256. Used the built-in image tool to make a small
+  ochre bowl and pebble motif, then composited it only into `(1085,575,120,81)`
+  open rock with a standard-library PNG compositor. The new mark changes no
+  inherited pixels outside its box. Kept every older record and the goal
+  unchanged. Delivered wall-v18, identical continuing wall, record 37, and its
+  512-pixel JPEG. No other picture was saved in the workspace.
